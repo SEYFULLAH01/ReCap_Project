@@ -1,5 +1,6 @@
 ﻿
 using Entities.Concrete;
+using Entities.Concrete.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Business.Abstract
         List<Car> GetByName(string Name);
         List<Car> GetCarsByColorId(int colorId);
         List<Car> GetCarsByBrandId(int brandId);
+        List<CarDetailDto> GetCarDetailDtos();
 
     }
 }
